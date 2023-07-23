@@ -50,10 +50,12 @@
         android:backgroundTint="#043EA3"
         android:fontFamily="@font/roboto_slab"
         android:text="Registrarse"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password1" />
+        app:layout_constraintTop_toBottomOf="@+id/password1"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView2"

@@ -68,9 +68,11 @@
         android:backgroundTint="#043EA3"
         android:fontFamily="@font/roboto_slab"
         android:text="Registrarse"
+        android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/btnsignup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/btnsignup"
@@ -80,10 +82,12 @@
         android:backgroundTint="#043EA3"
         android:fontFamily="@font/roboto_slab"
         android:text="Inicia Sesion"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView2"

@@ -37,26 +37,26 @@ public class MainActivity extends AppCompatActivity {
                 String repass = repassword.getText().toString();
 
                     if (user.equals("") || pass.equals("") || repass.equals("")){
-                        Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Por favor complete todos los campos", Toast.LENGTH_LONG).show();
                     }else{
                         if (pass.equals(repass)){
                             Boolean checkuser = DB.checkusername(user);
                             if(checkuser == false){
                                 Boolean insert = DB.insertData(user, pass);
                                 if (insert == true){
-                                    Toast.makeText(MainActivity.this, "Registred successfully", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(MainActivity.this, "Registro realizado correctamente ", Toast.LENGTH_LONG).show();
                                     Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
                                     startActivity(intent);
                                 }else {
-                                    Toast.makeText(MainActivity.this, "Registration failed", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(MainActivity.this, "Error al registrar ", Toast.LENGTH_LONG).show();
                                 }
                             }
                             else {
-                                Toast.makeText(MainActivity.this, "User alredy exist, please sign in", Toast.LENGTH_LONG).show();
+                                Toast.makeText(MainActivity.this, "El usuario ya existe, por favor inicie sesión", Toast.LENGTH_LONG).show();
                             }
                         }
                         else {
-                            Toast.makeText(MainActivity.this, "Password not matching", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this, "La contraseña no coincide", Toast.LENGTH_LONG).show();
                         }
                     }
             }
