@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                                 Boolean insert = DB.insertData(user, pass);
                                 if (insert == true){
                                     Toast.makeText(MainActivity.this, "Registro realizado correctamente ", Toast.LENGTH_LONG).show();
-                                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                     startActivity(intent);
                                 }else {
                                     Toast.makeText(MainActivity.this, "Error al registrar ", Toast.LENGTH_LONG).show();
