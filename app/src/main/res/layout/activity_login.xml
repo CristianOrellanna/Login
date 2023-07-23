@@ -49,7 +49,7 @@
         android:layout_marginTop="26dp"
         android:backgroundTint="#043EA3"
         android:fontFamily="@font/roboto_slab"
-        android:text="Registrarse"
+        android:text="Iniciar sesion"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
