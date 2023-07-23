@@ -4,64 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="wrap_content"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="67dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/p_addperson"
         android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="Nombre de usuario"
         android:inputType="text"
         android:minHeight="48dp"
-        android:text="username"
+        android:paddingStart="8dp"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="230dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/p_lock"
         android:ems="10"
+        android:hint="Contraseña"
         android:inputType="text"
         android:minHeight="48dp"
-        android:text="password"
-        app:layout_constraintBottom_toTopOf="@+id/repassword"
-        app:layout_constraintStart_toStartOf="@+id/repassword" />
-
-    <EditText
-        android:id="@+id/repassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
-        android:ems="10"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:text="confirm password"
-        app:layout_constraintBottom_toTopOf="@+id/btnsignin"
+        android:paddingStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/p_confirm"
+        android:ems="10"
+        android:hint="Confirmar contraseña"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
     <Button
         android:id="@+id/btnsignin"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="Button"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#043EA3"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Registrarse"
         app:layout_constraintBottom_toTopOf="@+id/btnsignup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnsignup"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#043EA3"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Inicia Sesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="118dp"
-        android:text="Si ya existing user go to sign in page"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Registrarse"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
